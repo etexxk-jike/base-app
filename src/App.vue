@@ -1,9 +1,14 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div>
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link> |
+      <router-link to="/vue">Vue应用</router-link> |
+      <router-link to="/app1">Vue应用1</router-link> |
+      <router-link to="/combone12">多应用1, 2</router-link>
+    </div>
+    <router-view/>
   </div>
-  <router-view/>
 </template>
 
 <style lang="less">
