@@ -5,7 +5,8 @@
       <router-link to="/about">About</router-link> |
       <router-link to="/vue">Vue应用</router-link> |
       <router-link to="/app1">Vue应用1</router-link> |
-      <router-link to="/combone12">多应用1, 2</router-link>
+      <router-link to="/combone12">多应用1, 2</router-link> |
+      <router-link to="/form">FORM TEST</router-link>
     </div>
     <router-view/>
   </div>

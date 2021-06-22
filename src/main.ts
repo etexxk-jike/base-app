@@ -2,6 +2,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+
 import { registerMicroApps, start } from 'qiankun'
 
 // 子应用为 hash 模式配置, 步骤1

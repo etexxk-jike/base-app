@@ -54,6 +54,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/combone12',
     name: 'VueApp1Combone12',
     component: Child1App12
+  },
+  {
+    path: '/form',
+    name: 'VueApp1Form',
+    component: () => import('../views/child-form.vue')
   }
 ]
 

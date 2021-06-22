@@ -7,11 +7,12 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import { MicroAppStateActions, initGlobalState } from 'qiankun'
+
 export default {
   name: 'child1-vue',
-  data ():any {
+  data () {
     return {
       action: null,
       state: {
@@ -20,9 +21,9 @@ export default {
       }
     }
   },
-  created ():void {
+  created () {
     // 初始化 state
-    const actions: MicroAppStateActions = initGlobalState(this.state)
+    const actions = initGlobalState(this.state)
 
     this.actions = actions
     this.actions.onGlobalStateChange((state, prev) => {
@@ -31,7 +32,7 @@ export default {
     })
   },
   methods: {
-    changeState ():void {
+    changeState () {
       this.actions.setGlobalState({
         name: this.state.name
       })
